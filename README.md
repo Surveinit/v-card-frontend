@@ -1,5 +1,5 @@
 # v-card-frontend
 
-- [ ] Mobile
+- [X] Mobile
 - [X] Web
 - [ ] Animations
