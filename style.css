@@ -1,0 +1,97 @@
+:root {
+  --purple: #70329a;
+  --dark-purple: #150022;
+  --white: #ffffff;
+}
+
+* {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: var(--purple);
+  border-radius: 8px;
+}
+
+.left-container {
+  padding: 24px;
+  width: 400px;
+  border-radius: 6px 0 0 6px;
+}
+
+h2 {
+  color: var(--white);
+}
+
+.left-container > p {
+  color: var(--white);
+  padding-bottom: 12px;
+}
+
+.socials > img {
+  width: 40px;
+  padding-bottom: 12px;
+  padding-right: 8px;
+}
+
+.socials > img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  padding-bottom: 16px;
+}
+
+/* Adds a slash after phone number */
+#phone-no::after {
+  content: " / ";
+  margin: 0 5px;
+}
+
+/* Email button section */
+.email-btn-container {
+  display: flex;
+}
+
+.email-btn {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.email-btn:hover {
+  transform: scale(1.05);
+}
+
+.email-btn:active {
+  transform: translate(0);
+}
+
+.right-container {
+  width: 400px;
+  background-color: grey;
+  border-radius: 0 6px 6px 0;
+}
